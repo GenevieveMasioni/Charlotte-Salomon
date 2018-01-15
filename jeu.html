@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html class="jeu">
+<head>
+  <meta charset="utf-8">
+  <title>Jeu</title>
+  <link rel="stylesheet" href="ressources/css/style.css">
+  <script type="text/javascript" src="ressources/js/jquery.js"></script>
+  <script type="text/javascript" src="ressources/js/quiz.js"></script>
+</head>
+<body>
+  <main>
+    <div class="questions">
+      <p class="question">
+        1. Où Charlotte habitait-elle après le départ d'Ottilie aux Etats-Unis ?
+      </p>
+      <ul class="answers">
+        <li>
+          <input type="radio" name="q1" value="a" id="q1a">
+          <label for="q1a">A l'hôtel</label>
+        </li>
+        <li>
+          <input type="radio" name="q1" value="b" id="q1b">
+          <label for="q1b">Chez son grand-père</label>
+        </li>
+        <li>
+          <input type="radio" name="q1" value="c" id="q1c">
+          <label for="q1c">A l'Ermitage</label>
+        </li>
+      </ul>
+      <div id="category1" class="answer">
+        <p>La bonne réponse est <strong>A l'Ermitage</strong>.</p>
+      </div>
+    </div>
+    <div class="questions">
+      <p class="question">
+        2. Comment Charlotte meurt-elle ?
+      </p>
+      <ul class="answers">
+        <li>
+          <input type="radio" name="q2" value="a" id="q2a">
+          <label for="q2a">Poignardée</label>
+        </li>
+        <li>
+          <input type="radio" name="q2" value="b" id="q2b">
+          <label for="q2b">Suicide</label>
+        </li>
+        <li>
+          <input type="radio" name="q2" value="c" id="q2c">
+          <label for="q2c">Dans une chambre à gaz</label>
+        </li>
+      </ul>
+      <div id="category2" class="answer">
+        <p>La bonne réponse est <strong>Dans une chambre à gaz</strong>.</p>
+        <img src="ressources/images/plaque_Charlotte_Salomon.png"
+        alt="Plaque commémorative de Charlotte Salomon">
+        <p class="tag">
+          Stolperstein dédié à Charlotte SALOMON,
+          Wielandstraße à Amsterdam.
+        </p>
+        <p>
+          Les Stolpersteine sont des pavés enchâssés dans la chaussée,
+          en mémoire aux victimes de le Seconde Gueurre mondiale.
+        </p>
+      </div>
+    </div>
+    <div class="questions">
+      <p class="question">
+        3. Qui est le père de l’enfant que porte Charlotte à la fin du livre ?
+      </p>
+      <ul class="answers">
+        <li>
+          <input type="radio" name="q3" value="a" id="q3a">
+          <label for="q3a">Alfred</label>
+        </li>
+        <li>
+          <input type="radio" name="q3" value="b" id="q3b">
+          <label for="q3b">Alexander</label>
+        </li>
+        <li>
+          <input type="radio" name="q3" value="c" id="q3c">
+          <label for="q3c">Un soldat nazi</label>
+        </li>
+      </ul>
+      <div id="category3" class="answer">
+        <p>La bonne réponse est <strong>Alexander</strong>.</p>
+        <img src="ressources/images/#" alt="Alexander">
+        <p class="tag">
+          Alexander Nagler, époux de Charlotte. (INSERER PHOTO SCAN)
+        </p>
+      </div>
+    </div>
+    <div class="questions">
+      <p class="question">
+        4. Quelle est la dernière oeuvre de Charlotte ?
+      </p>
+      <ul class="answers">
+        <li>
+          <input type="radio" name="q4" value="a" id="q4a">
+          <label for="q4a">Elle, face à la mer</label>
+        </li>
+        <li>
+          <input type="radio" name="q4" value="b" id="q4b">
+          <label for="q4b">Un portrait d'Alfred</label>
+        </li>
+        <li>
+          <input type="radio" name="q4" value="c" id="q4c">
+          <label for="q4c">Le jardin de L'Ermitage</label>
+        </li>
+      </ul>
+      <div id="category4" class="answer">
+        <p>La bonne réponse est <strong>Elle, face à la mer</strong>.</p>
+        <img src="ressources/images/mer_villefranche_sur_mer.png"
+        alt="Vue de la mer depuis Villefranche-sur-mer">
+        <p class="tag">
+          Aujourd'hui, vue de la mer depuis Villefranche-sur-mer
+        </p>
+      </div>
+    </div>
+    <div class="questions">
+      <p class="question">
+        5. Qu’écrit Charlotte sur son dernier tableau ?
+      </p>
+      <ul class="answers">
+        <li>
+          <input type="radio" name="q5" value="a" id="q5a">
+          <label for="q5a">Vie ? ou Théâtre ? (Leben ? oder Theater)</label>
+        </li>
+        <li>
+          <input type="radio" name="q5" value="b" id="q5b">
+          <label for="q5b">Plus de Lumière !</label>
+        </li>
+        <li>
+          <input type="radio" name="q5" value="c" id="q5c">
+          <label for="q5c">Une lumière pour mourir</label>
+        </li>
+      </ul>
+      <div id="category5" class="answer">
+        <p>
+          La bonne réponse est <strong>Vie ? ou Théâtre ?(Leben ? oder Theater)</strong>.
+        </p>
+        <img src="ressources/images/Leben-oder-Theater.png"
+        alt="Leben ? oder Theater ?, Charlotte Salomon">
+        <p class="tag"><em>Leben ? oder Theater ?</em>, Charlotte Salomon</p>
+        <p>La dernière oeuvre de Charlotte porte le numéro 558.</p>
+      </div>
+    </div>
+    <div class="questions">
+      <p class="question">
+        6. Quel est le responsable SS à l'origine de la déportation de
+        Charlotte et Alexander ?
+      </p>
+      <ul class="answers">
+        <li>
+          <input type="radio" name="q6" value="a" id="q6a">
+          <label for="q6a">Gurs</label>
+        </li>
+        <li>
+          <input type="radio" name="q6" value="b" id="q6b">
+          <label for="q6b">Brunner</label>
+        </li>
+        <li>
+          <input type="radio" name="q6" value="c" id="q6c">
+          <label for="q6c">Bunner</label>
+        </li>
+      </ul>
+      <div id="category6" class="answer">
+        <p>La bonne réponse est <strong>Brunner</strong>.</p>
+        <img src="ressources/images/Alois_Brunner.png" alt="Alois Brunner">
+        <p class="tag">
+          Alois Brunner, membre du parti nazi et officier SS lors de la WW2.
+        </p>
+      </div>
+    </div>
+    <div class="questions">
+      <p class="question">
+        7. Comment l’histoire de Paula et Albert finit-elle ?
+      </p>
+      <ul class="answers">
+        <li>
+          <input type="radio" name="q7" value="a" id="q7a">
+          <label for="q7a">Mort dans un camp</label>
+        </li>
+        <li>
+          <input type="radio" name="q7" value="b" id="q7b">
+          <label for="q7b">Mort de tristesse</label>
+        </li>
+        <li>
+          <input type="radio" name="q7" value="c" id="q7c">
+          <label for="q7c">Mort de vieillesse</label>
+        </li>
+      </ul>
+      <div id="category7" class="answer">
+        <p>La bonne réponse est <strong>Mort de vieillesse</strong>.</p>
+        <img src="ressources/images/Appartement_Amsterdam.png"
+        alt="Appartement de Paula et Albert à Amsterdam.png">
+        <p class="tag">Appartement de Paula et Albert à Amsterdam.</p>
+        <p>
+          Ils se sont réfugiés à Amsterdam en 1940.
+          L’appartement, situé au numéro 15 de la Wielandstraße est
+          désormais vide.
+        </p>
+      </div>
+    </div>
+    <div class="questions">
+      <p class="question">
+        8. Comment l’histoire d'Alfred finit-elle ? D’après le livre de
+        David Foenkinos.
+      </p>
+      <ul class="answers">
+        <li>
+          <input type="radio" name="q8" value="a" id="q8a">
+          <label for="q8a">Mort dans un camp</label>
+        </li>
+        <li>
+          <input type="radio" name="q8" value="b" id="q8b">
+          <label for="q8b">Mort de tristesse</label>
+        </li>
+        <li>
+          <input type="radio" name="q8" value="c" id="q8c">
+          <label for="q8c">Mort de vieillesse</label>
+        </li>
+      </ul>
+      <div id="category8" class="answer">
+        <p>La bonne réponse est <strong>Mort de tristesse</strong>.</p>
+        <img src="ressources/images/Alfred_Wolfsohn.jpg" alt="Alfred">
+        <p class="tag">Alfred Wolfsohn, l'amant de Charlotte</p>
+      </div>
+    </div>
+    <div class="questions">
+      <p class="question">
+        9. D’après les rumeurs, comment le grand-père de Charlotte est-il mort ?
+      </p>
+      <ul class="answers">
+        <li>
+          <input type="radio" name="q9" value="a" id="q9a">
+          <label for="q9a">Assassiner par un soldat nazi</label>
+        </li>
+        <li>
+          <input type="radio" name="q9" value="b" id="q9b">
+          <label for="q9b">En se suicidant</label>
+        </li>
+        <li>
+          <input type="radio" name="q9" value="c" id="q9c">
+          <label for="q9c">Empoisonné par sa petite-fille</label>
+        </li>
+      </ul>
+      <div id="category9" class="answer">
+        <p>
+          La bonne réponse est <strong>Empoisonné par sa petite-fille</strong>.
+        </p>
+        <img src="ressources/images/Ch-grands-parents.jpg"
+        alt="Grands-parents maternels de Charlotte">
+        <p class="tag">Grands-parents maternels de Charlotte</p>
+      </div>
+    </div>
+    <div class="questions">
+      <p class="question">
+        10. Dans quel ordre les oeuvres de Charlotte ont-elles été confiées ?
+      </p>
+      <ul class="answers">
+        <li>
+          <input type="radio" name="q10" value="a" id="q10a">
+          <label for="q10a">Moridis > Paula et Albert > Musée juif d’Amsterdam</label>
+        </li>
+        <li>
+          <input type="radio" name="q10" value="b" id="q10b">
+          <label for="q10b">Ottilie > Moridis > Paula et Albert</label>
+        </li>
+        <li>
+          <input type="radio" name="q10" value="c" id="q10c">
+          <label for="q10c">A personne, puis découvert par Paula et Albert</label>
+        </li>
+      </ul>
+      <div id="category10" class="answer">
+        <p>
+          La bonne réponse est <strong>Moridis > Paula et Albert > Musée juif d’Amsterdam</strong>.
+        </p>
+        <img src="ressources/images/Musée juif d'Amsterdam 2.png"
+        alt="Musée juif d'Amsterdam">
+        <p class="tag">Musée juif d'Amsterdam</p>
+        <p>
+          Paula et Albert révèlent ses oeuvres au Stedelijk Museum d'Amsterdam
+          qui organisent plusieurs expositions. En 1971, ils confient la collection
+          au Jewish Historical Museum d'Amsterdam, où elle se trouve encore.
+        </p>
+      </div>
+    </div>
+    <div class="questions">
+      <p class="question">
+        11. Qui était Alexander Nagler avant sa rencontre avec Charlotte ?
+      </p>
+      <ul class="answers">
+        <li>
+          <input type="radio" name="q11" value="a" id="q11a">
+          <label for="q11a">Un réfugié autrichien</label>
+        </li>
+        <li>
+          <input type="radio" name="q11" value="b" id="q11b">
+          <label for="q11b">L’époux d’Ottilie</label>
+        </li>
+        <li>
+          <input type="radio" name="q11" value="c" id="q11c">
+          <label for="q11c">Un réfugié Allemand</label>
+        </li>
+      </ul>
+      <div id="category11" class="answer">
+        <p>La bonne réponse est <strong>Un réfugié autrichien</strong>.</p>
+      </div>
+    </div>
+    <div class="questions">
+      <p class="question">12. Que dit Charlotte du contenu de la valise ?</p>
+      <ul class="answers">
+        <li>
+          <input type="radio" name="q12" value="a" id="q12a">
+          <label for="q12a">C’est mon oeuvre</label>
+        </li>
+        <li>
+          <input type="radio" name="q12" value="b" id="q12b">
+          <label for="q12b">C'est toute ma vie</label>
+        </li>
+        <li>
+          <input type="radio" name="q12" value="c" id="q12c">
+          <label for="q12c">Vie ? ou Théâtre</label>
+        </li>
+      </ul>
+      <div id="category12" class="answer">
+        <p>La bonne réponse est <strong>C'est toute ma vie</strong>.</p>
+      </div>
+    </div>
+    <div class="questions">
+      <p class="question">
+        13. Dans <em>Vie ? ou Théâtre ?</em>, que représente Alfred
+        pour Charlotte ?
+      </p>
+      <ul class="answers">
+        <li>
+          <input type="radio" name="q13" value="a" id="q13a">
+          <label for="q13a">Son Roméo</label>
+        </li>
+        <li>
+          <input type="radio" name="q13" value="b" id="q13b">
+          <label for="q13b">Son Amadeus</label>
+        </li>
+        <li>
+          <input type="radio" name="q13" value="c" id="q13c">
+          <label for="q13c">Son Époux</label>
+        </li>
+      </ul>
+      <div id="category13" class="answer">
+        <p>La bonne réponse est <strong>Son Amadeus</strong>.</p>
+        <p>Signifie "celui qui aime Dieu". Terme repris d’une
+          pièce de théâtre de Pouchkine intitulé “Mozart et Salieri” en 1830.
+        </p>
+      </div>
+    </div>
+    <div class="questions">
+      <p class="question">
+        14. Durant son enfance, comment Charlotte considérait-elle son école ?
+      </p>
+      <ul class="answers">
+        <li>
+          <input type="radio" name="q14" value="a" id="q14a">
+          <label for="q14a">Un grand bâtiment triste</label>
+        </li>
+        <li>
+          <input type="radio" name="q14" value="b" id="q14b">
+          <label for="q14b">Un lieu où la douleur s’apaise</label>
+        </li>
+        <li>
+          <input type="radio" name="q14" value="c" id="q14c">
+          <label for="q14c">Comme sa deuxième maison</label>
+        </li>
+      </ul>
+      <div id="category14" class="answer">
+        <p>
+          La bonne réponse est <strong>Un lieu où la douleur s’apaise</strong>.
+        </p>
+        <img src="ressources/images/Ecole de Charlotte Salomon.jpg"
+        alt="Ecole de Charlotte Salomon">
+        <p class="tag">Ecole primaire de Charlotte Salomon</p>
+        <p>L'ancienne école Paul Dohrmann (1975-1977), fondé par Karl Otto et
+          Hans H. Habermann à Großbeerenstraße, Berlin-Kreuzberg.
+        </p>
+      </div>
+    </div>
+    <div id="results">Voir les réponses</div>
+    <div id="category15">
+      <p>Toutes les réponses sont bonnes ! Bravo !</p>
+    </div>
+  </main>
+</body>
+</html>

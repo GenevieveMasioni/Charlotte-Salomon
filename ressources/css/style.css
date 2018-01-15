@@ -1,0 +1,403 @@
+/************************************************************
+
+Theme name : Charlotte
+Description: Charlotte is a flipbook theme to showcase content with
+a book effect.
+Author: Adrien Lachhab, Mary Maatouk, Genevieve Masioni
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Version: 1.0
+Tags: flipbook, two-column
+
+**************************************************************
+
+Table of Contents:
+
+  0. GLOBAL
+  1. HEADER
+  2. MENU
+  3. BOOK
+  4. PAGES
+  5. IMAGES
+  6. TITLES
+  7. QUOTE
+  8. QUIZ GAME
+  9. CREDITS
+
+**************************************************************/
+
+
+/************************************************
+0.	GLOBAL
+************************************************/
+
+html {
+  font-size: 16px;
+  height: 100%;
+  overflow: hidden;
+}
+
+body, * {
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+}
+
+body {
+  padding: 3rem;
+  background-color: white;
+  height: 100% !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: auto;
+  font-family: 'Open sans', sans-serif;
+  font-weight: 600;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  text-align: justify;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/************************************************
+1.	HEADER
+************************************************/
+
+header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: .9rem;
+  margin: 0 auto;
+  z-index: 15;
+  text-align: center;
+}
+
+#site-title {
+  margin: 1rem;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+header a {
+  color: black;
+}
+
+/************************************************
+2.	MENU
+************************************************/
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .05rem;
+}
+
+.menu ul li a:hover {
+  color: #629DB1;
+  text-decoration: none;
+}
+
+#custom-menu {
+  color: white;
+  position: absolute;
+}
+
+/************************************************
+3.	BOOK
+************************************************/
+
+.livre {
+  overflow: scroll;
+  background-color: #E7C24C;
+  background-image: url("../images/ch-salomon.jpg");
+  background-size: cover;
+  background-position: 10%;
+  height: 40.5rem;
+}
+
+.booklet .b-page-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/************************************************
+4.	PAGES
+************************************************/
+
+/* Cover page */
+div.b-page:nth-child(2) {
+  background: #EDC059 !important;
+}
+
+div.b-page:nth-child(even) {
+    background: #F8F8F8;
+    background-image: url("../images/effects/clean-gray-paper.png");
+    background-repeat: repeat;
+}
+div.b-page:nth-child(2n+3) {
+    background: #FFF;
+    background-image: url("../images/effects/clean-gray-paper.png");
+    background-repeat: repeat;
+}
+
+/* Page n°1 */
+div.b-page:nth-child(3) {
+  background-image: url("../images/charlotte_salomon.jpg");
+  background-size: cover;
+}
+
+div.b-page:nth-child(9) {
+  background-image: url("../images/Charlotte_Salomon_1939.jpg");
+  background-size: cover;
+}
+
+div.b-page:nth-child(12) {
+  background-image: url("../images/Ch-Albert.jpg");
+  background-size: cover;
+}
+
+div.b-page:nth-child(13) {
+  background-image: url("../images/Ch-Alfred.jpg");
+  background-size: cover;
+}
+
+div.b-page:nth-child(3) div.b-wrap,
+div.b-page:nth-child(9) div.b-wrap,
+div.b-page:nth-child(12) div.b-wrap,
+div.b-page:nth-child(13) div.b-wrap {
+  background: none;
+  background-image: none;
+}
+
+/* Page n°2 */
+div.b-page:nth-child(4) div.b-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+/* Page n°3 */
+div.b-page:nth-child(5) div.b-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+div.b-page:nth-child(27) div.b-wrap {
+  display: flex;
+  align-items: flex-end;
+}
+
+
+/* End cover page */
+div.b-page:nth-child(29) {
+  background-color: #EDC059;
+  background-image: none;
+}
+
+div.b-page:nth-child(30) {
+  background-color: #EDC059;
+  background-image: none;
+}
+
+/************************************************
+5.	IMAGES
+************************************************/
+
+div.b-page:nth-child(5) div.b-wrap img {
+  width: 80%;
+  margin-bottom: .5rem;
+}
+
+div.container-illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: .5rem;
+}
+
+img.illustration {
+  width: 78%;
+}
+
+/************************************************
+6.	TITLES
+************************************************/
+
+.page-title {
+  height: 12rem;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+div.page-title.charlotte {
+  height: 7rem;
+}
+
+.title {
+  font-weight: bold;
+  width: 100%;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.sub-title {
+  font-style: italic;
+  font-weight: 200;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.chapiter {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+/************************************************
+7.	QUOTE
+************************************************/
+
+.quote {
+  /* text-align: right; */
+}
+.quote-meta {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  float: right;
+}
+
+.quote-meta span {
+  width: 100%;
+}
+
+.quote-author {
+  text-transform: uppercase;
+}
+
+/************************************************
+8.	QUIZ GAME
+************************************************/
+
+html.jeu {
+  overflow: scroll;
+  font-weight: 200;
+  font-size: .85rem;
+}
+
+html.jeu body {
+  background-color: transparent;
+  padding: 0;
+}
+
+iframe.jeu {
+  border: 1px solid #989898;
+  padding: 1.5rem;
+  min-height: 25rem;
+}
+
+.question {
+  font-weight: bold;
+}
+
+.answers li {
+list-style: none;
+}
+
+.answer {
+  border: 1px solid green;
+  padding: .5rem 1rem;
+  background: seagreen;
+  margin: 1rem;
+}
+
+.answer img {
+  max-width: 20rem;
+  filter: opacity(80%);
+}
+
+.tag {
+	text-transform: uppercase;
+	font-size: .7rem;
+}
+
+.tag-gouache, .tag-photo {
+  font-style: italic;
+  font-size: .7rem;
+  text-align: center;
+}
+
+label {
+margin-left: 0.5em;
+cursor: pointer;
+}
+
+#results {
+background: #629DB1;
+color: 000000;
+padding: .5rem;
+text-align: center;
+width: 200px;
+cursor: pointer;
+border: none;
+margin-top: 2rem;
+text-transform: uppercase;
+}
+
+#results:hover {
+background: #47889E;
+border: none;
+}
+
+#categorylist {
+margin-top: 6px;
+display: none;
+}
+
+#category1, #category2, #category3, #category4, #category5, #category6,
+#category7, #category8, #category9, #category10, #category11, #category12,
+#category13, #category14, #category15 {
+display: none;
+}
+
+#category15 {
+  font-weight: bold;
+  color: green;
+}
+
+#closing {
+display: none;
+font-style: italic;
+}
+
+/************************************************
+9.	CREDITS
+************************************************/
+
+div.credits .b-wrap {
+  display: flex;
+}
