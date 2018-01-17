@@ -120,6 +120,14 @@ header a {
   position: absolute;
 }
 
+.home-return {
+  text-align: center;
+}
+
+.home-return a {
+  color: #48899F;
+}
+
 /************************************************
 3.	BOOK
 ************************************************/
@@ -176,14 +184,44 @@ div.b-page:nth-child(12) {
 }
 
 div.b-page:nth-child(13) {
-  background-image: url("../images/Ch-Alfred.jpg");
+  background-image: url("../images/ChS-Fleurs.jpg");
+  background-size: cover;
+}
+
+div.b-page:nth-child(17) {
+  background-image: url("../images/David_Foenkinos_salon_radio_france_2011.jpg");
+  background-size: cover;
+}
+
+div.b-page:nth-child(20) {
+  background-image: url("../images/ChS.Keuze.jpg");
+  background-size: cover;
+}
+
+div.b-page:nth-child(23) {
+  background-image: url("../images/ChS-vie.jpg");
+  background-size: cover;
+}
+
+div.b-page:nth-child(25) {
+  background-image: url("../images/ChS-femme.jpg");
+  background-size: cover;
+}
+
+div.b-page:nth-child(27) {
+  background-image: url("../images/ChS-hopital.jpeg");
   background-size: cover;
 }
 
 div.b-page:nth-child(3) div.b-wrap,
 div.b-page:nth-child(9) div.b-wrap,
 div.b-page:nth-child(12) div.b-wrap,
-div.b-page:nth-child(13) div.b-wrap {
+div.b-page:nth-child(13) div.b-wrap,
+div.b-page:nth-child(17) div.b-wrap,
+div.b-page:nth-child(20) div.b-wrap,
+div.b-page:nth-child(23) div.b-wrap,
+div.b-page:nth-child(25) div.b-wrap,
+div.b-page:nth-child(27) div.b-wrap  {
   background: none;
   background-image: none;
 }
@@ -197,27 +235,27 @@ div.b-page:nth-child(4) div.b-wrap {
   text-align: center;
 }
 
-/* Page n°3 */
-div.b-page:nth-child(5) div.b-wrap {
+div.b-page:nth-child(5) div.b-wrap,
+div.b-page:nth-child(17) div.b-wrap {
   display: flex;
   justify-content: flex-start;
   align-content: center;
   flex-wrap: wrap;
 }
 
-div.b-page:nth-child(27) div.b-wrap {
+div.b-page:nth-child(31) div.b-wrap {
   display: flex;
   align-items: flex-end;
 }
 
 
 /* End cover page */
-div.b-page:nth-child(29) {
+div.b-page:nth-child(33) {
   background-color: #EDC059;
   background-image: none;
 }
 
-div.b-page:nth-child(30) {
+div.b-page:nth-child(34) {
   background-color: #EDC059;
   background-image: none;
 }

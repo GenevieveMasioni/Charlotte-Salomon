@@ -28,15 +28,15 @@ $(function() {
   });
   $('#critiques').click(function(e){
     e.preventDefault();
-    $('#mybook').booklet("gotopage", "18");
+    $('#mybook').booklet("gotopage", "20");
   });
   $('#jeu').click(function(e){
     e.preventDefault();
-    $('#mybook').booklet("gotopage", "23");
+    $('#mybook').booklet("gotopage", "26");
   });
   $('#a-propos').click(function(e){
     e.preventDefault();
-    $('#mybook').booklet("gotopage", "24");
+    $('#mybook').booklet("gotopage", "28");
   });
 
   // QUIZ
